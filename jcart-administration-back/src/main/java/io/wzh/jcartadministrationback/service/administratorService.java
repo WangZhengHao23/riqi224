@@ -13,6 +13,14 @@ public interface administratorService {
 
     Administrator getByUsername(String username);
 
+    Integer create(Administrator administrator);
+
     void update(Administrator administrator);
+
+    void delete(Integer administratorId);
+
+    void batchDelete(List<Integer> administratorIds);
+
+    Page<Administrator> getList(Integer pageNum);
 
 }

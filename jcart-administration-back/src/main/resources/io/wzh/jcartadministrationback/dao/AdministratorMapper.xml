@@ -132,4 +132,21 @@
         from administrator
         where username = #{username}
     </select>
+    <delete id="batchDelete">
+        delete from administrator
+        where administrator_id in
+        <foreach item="item" index="index" collection="administratorIds"
+                 open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+    <select id="selectList" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from administrator
+    </select>
+
+
+
 </mapper>
