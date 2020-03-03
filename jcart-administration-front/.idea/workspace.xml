@@ -8,8 +8,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1YZGTUBm5mIwBAd1yLsMScqkvxL" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -37,6 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583142710774</updated>
       <workItem from="1583142711996" duration="1263000" />
+      <workItem from="1583220080788" duration="3125000" />
     </task>
     <servers />
   </component>
