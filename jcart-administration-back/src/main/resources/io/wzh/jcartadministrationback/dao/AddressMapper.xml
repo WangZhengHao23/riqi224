@@ -103,4 +103,10 @@
       tag = #{tag,jdbcType=VARCHAR}
     where address_id = #{addressId,jdbcType=INTEGER}
   </update>
+    <select id="selectByCustomerId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from address
+        where customer_id = #{customerId}
+    </select>
 </mapper>

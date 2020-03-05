@@ -1,5 +1,9 @@
 package io.wzh.jcartadministrationback.dto.out;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.util.Date;
+
 public class OrderListOutDTO {
     private Long orderId;
     private Integer customerId;
@@ -8,7 +12,11 @@ public class OrderListOutDTO {
     private Double totalPirce;
     private Long createTimestamp;
     private Long updateTimestamp;
-
+    private Integer rewordPoints;
+    @JsonIgnore
+    private Date createTIme;
+    @JsonIgnore
+    private Date updateTime;
 
     public Integer getCustomerId() {
         return customerId;
@@ -35,20 +43,15 @@ public class OrderListOutDTO {
     }
 
     public Long getCreateTimestamp() {
-        return createTimestamp;
+        return this.createTimestamp==null?null:this.createTIme.getTime();
     }
 
-    public void setCreateTimestamp(Long createTimestamp) {
-        this.createTimestamp = createTimestamp;
-    }
+
 
     public Long getUpdateTimestamp() {
-        return updateTimestamp;
+        return this.updateTimestamp==null?null:this.updateTime.getTime();
     }
 
-    public void setUpdateTimestamp(Long updateTimestamp) {
-        this.updateTimestamp = updateTimestamp;
-    }
 
     public Byte getStatus() {
         return status;
@@ -64,5 +67,29 @@ public class OrderListOutDTO {
 
     public void setOrderId(Long orderId) {
         this.orderId = orderId;
+    }
+
+    public Integer getRewordPoints() {
+        return rewordPoints;
+    }
+
+    public void setRewordPoints(Integer rewordPoints) {
+        this.rewordPoints = rewordPoints;
+    }
+
+    public Date getCreateTIme() {
+        return createTIme;
+    }
+
+    public void setCreateTIme(Date createTIme) {
+        this.createTIme = createTIme;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 }

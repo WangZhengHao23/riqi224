@@ -20,7 +20,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jcart-store-front" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,6 +47,7 @@
       <workItem from="1583142711996" duration="1263000" />
       <workItem from="1583220080788" duration="3125000" />
       <workItem from="1583304850534" duration="9000" />
+      <workItem from="1583391119571" duration="3999000" />
     </task>
     <servers />
   </component>
