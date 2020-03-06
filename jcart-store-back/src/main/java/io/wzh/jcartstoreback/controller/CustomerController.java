@@ -3,7 +3,6 @@ package io.wzh.jcartstoreback.controller;
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import io.wzh.jcartstoreback.constant.ClientExceptionConstant;
 import io.wzh.jcartstoreback.dto.in.*;
-import io.wzh.jcartstoreback.dto.in.*;
 import io.wzh.jcartstoreback.dto.out.CustomerGetProfileOutDTO;
 import io.wzh.jcartstoreback.dto.out.CustomerLoginOutDTO;
 import io.wzh.jcartstoreback.exception.ClientException;
@@ -31,14 +30,14 @@ public class CustomerController {
     @Autowired
     private JWTUtil jwtUtil;
 
-   @Autowired
+  @Autowired
     private SecureRandom secureRandom;
 
-    @Autowired
+  /*   @Autowired
     private JavaMailSender mailSender;
 
     @Value("${spring.mail.username}")
-    private String fromEmail;
+    private String fromEmail;*/
 
     private HashMap<String, String> emailPwdResetCodeMap = new HashMap();
 
@@ -108,7 +107,7 @@ public class CustomerController {
 
     }
 
-   @GetMapping("/getPwdResetCode")
+ /*   @GetMapping("/getPwdResetCode")
     public void getPwdResetCode(@RequestParam String email) throws ClientException {
         Customer customer = customerService.getByEmail(email);
         if (customer == null){
@@ -123,7 +122,7 @@ public class CustomerController {
         message.setText(hex);
         mailSender.send(message);
         emailPwdResetCodeMap.put("PwdResetCode"+email, hex);
-    }
+    }*/
 
     @PostMapping("/resetPwd")
     public void resetPwd(@RequestBody CustomerResetPwdInDTO customerResetPwdInDTO){

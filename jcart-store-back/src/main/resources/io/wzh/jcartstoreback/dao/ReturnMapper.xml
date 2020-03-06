@@ -105,9 +105,7 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="returnId != null">
-        #{returnId,jdbcType=INTEGER},
-      </if>
+
       <if test="orderId != null">
         #{orderId,jdbcType=BIGINT},
       </if>
@@ -232,4 +230,11 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where return_id = #{returnId,jdbcType=INTEGER}
   </update>
+    <select id="selectPageByCustomerId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from return
+        where customer_id = #{customerId}
+        order by create_time desc
+    </select>
 </mapper>
