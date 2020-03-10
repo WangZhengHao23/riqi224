@@ -2,6 +2,7 @@ package io.wzh.jcartstoreback.dao;
 
 import com.github.pagehelper.Page;
 import io.wzh.jcartstoreback.po.Return;
+import org.apache.ibatis.annotations.Param;
 
 public interface ReturnMapper {
     int deleteByPrimaryKey(Integer returnId);
@@ -16,5 +17,5 @@ public interface ReturnMapper {
 
     int updateByPrimaryKey(Return record);
 
-    Page<Return> selectPageByCustomerId(Integer customerId);
+    Page<Return> selectPageByCustomerId(@Param("customerId")Integer customerId);
 }
