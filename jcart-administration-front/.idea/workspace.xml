@@ -8,6 +8,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="jcart-administration-front" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -20,7 +23,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jcart-administration-back" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,6 +52,13 @@
       <workItem from="1583304850534" duration="9000" />
       <workItem from="1583391119571" duration="3999000" />
       <workItem from="1583498808961" duration="1976000" />
+      <workItem from="1583907960173" duration="37000" />
+      <workItem from="1583909068757" duration="4380000" />
+      <workItem from="1583973226902" duration="7000" />
+      <workItem from="1583973429265" duration="13000" />
+      <workItem from="1584000090282" duration="1092000" />
+      <workItem from="1584001203730" duration="1448000" />
+      <workItem from="1584254252512" duration="1088000" />
     </task>
     <servers />
   </component>
